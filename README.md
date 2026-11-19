@@ -1,6 +1,6 @@
 # Allocator Radar
 
-**Which Florida institutional allocators are getting ready to put money to work, and the public document that says so.**
+**Which Florida and Michigan institutional allocators are getting ready to put money to work, and the public document that says so.**
 
 Live overview: **[allocator.amagna.co](https://allocator.amagna.co/)** (the full tool is available to invited users).
 
@@ -35,6 +35,14 @@ databases are private.
   <tr>
     <td>Endowments and foundations. Figures from IRS Form 990 filings, cited to tax year, part and line.</td>
     <td>How it works, with the data-quality scorecard computed at every build.</td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="screenshots/5-michigan-plan.png" alt="A Michigan plan page: the Police and Fire Retirement System of the City of Detroit"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Michigan (Phase D). The same plan page for a Michigan system: readiness, the hiring tracker and cited facts.</td>
+    <td></td>
   </tr>
 </table>
 
@@ -86,7 +94,8 @@ document prints them.
 | A | South Florida public pension plans (Miami-Dade, Broward, Palm Beach, Monroe, plus the Treasure Coast) and the Florida Retirement System (State Board of Administration) | Done |
 | B | Every Florida local pension plan collected into the registry | Done (the product shows South Florida) |
 | C | The largest Florida endowments, foundations and nonprofit hospital systems, from IRS 990 filings and their own committee documents | Current: 59 organizations, 11 of them hospital systems |
-| D–J | All Florida local plans in the product; corporate and union plans (DOL Form 5500); managers, consultants and OCIOs (SEC filings); insurers and family offices; national coverage | Planned |
+| D | Michigan: the State of Michigan Investment Board, MERS, Detroit and every local system that runs its own plan (141), universities, foundations and hospital systems (78) | Current: Waves 1 and 2 collected, extracted and verified; 303 published pension signals |
+| E–K | All Florida local plans in the product; corporate and union plans (DOL Form 5500); managers, consultants and OCIOs (SEC filings); insurers and family offices; the product; national coverage; services | Planned |
 
 ## Data quality
 
@@ -117,7 +126,13 @@ each one passed.
 | `source_document`, `source_url`, `page` | The public document, where to get it, and the page the signal is on |
 | `verification` | The automatic checks the signal passed |
 
-The sample holds no contact details and names firms only. Open any `source_url` to check a row yourself.
+[`sample/michigan_verified_signals_sample.csv`](sample/michigan_verified_signals_sample.csv): 25 verified signals from
+14 Michigan public pension systems (Phase D, Wave 1), same columns. Each one passed the automatic checks and an
+independent verification against its cited page. Michigan has 303 published pension signals, all verified this
+way. Spot checks run by the data pipeline's own session (not yet by a person) found 40 of 40 correct in Wave 1 and
+19 of 20 in Wave 2; the miss was sent back to review.
+
+The samples hold no contact details and name firms only. Open any `source_url` to check a row yourself.
 
 ## Stack
 
