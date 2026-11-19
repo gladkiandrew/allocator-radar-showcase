@@ -126,7 +126,7 @@ language-model backend for extraction, and Cloudflare Workers for the published 
 
 ## Built by
 
-**Andrew Gladki**, Financial AI Engineer. I want to work on the institutional business development team of a large
+**Andrew Gladki.** I want to work on the institutional business development team of a large
 financial institution. This project shows what I would bring: AI engineering, data analytics, an understanding of
 how institutional capital moves, and the ability to take a complex, open-ended problem to an accurate, working
 solution quickly.
